@@ -17,7 +17,7 @@ while command!="q":
     mlist = []
     klist = []
     
-    if command=="d":
+    if command=="e":
         message = input("Message: ")
         key = input("Key: ")
         
@@ -25,9 +25,10 @@ while command!="q":
             mlist.append(associations.find(x))
         for x in key:
             klist.append(associations.find(x))
-            
+    print(mlist)
+    print(klist)
     
-    elif command=="e":
+    elif command=="d":
         message = input("Message: ")
         key = input("Key: ")
         print("e")
