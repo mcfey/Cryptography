@@ -13,7 +13,6 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-
 while command!="q":
     mlist = []
     klist = []
