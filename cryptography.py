@@ -23,10 +23,10 @@ while command!="q":
         key = input("Key: ")
         print("d")
     
-    if command=="d":
+    if command=="e":
         message = input("Message: ")
         key = input("Key: ")
-        print("d")
+        print("e")
 
     else: 
         print("Did not understand command, try again.")
