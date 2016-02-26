@@ -27,8 +27,6 @@ while command!="q":
         for x in key:
             keylist.append(associations.find(x))
             
-    print(output) 
-    print(key)
     
     elif command=="e":
         message = input("Message: ")
