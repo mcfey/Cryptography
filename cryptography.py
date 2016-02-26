@@ -25,7 +25,7 @@ while command!="q":
             mlist.append(associations.find(x))
         for x in key:
             klist.append(associations.find(x))
-    
+    print(mlist)
     
     elif command=="d":
         message = input("Message: ")
