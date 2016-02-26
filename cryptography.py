@@ -22,9 +22,9 @@ while command!="q":
         key = input("Key: ")
         
         for x in message:
-            output.append(associations.find(x))
+            mlist.append(associations.find(x))
         for x in key:
-            keylist.append(associations.find(x))
+            klist.append(associations.find(x))
             
     
     elif command=="e":
