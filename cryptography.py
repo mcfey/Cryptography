@@ -15,8 +15,8 @@ command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 
 while command!="q":
-    output = []
-    keylist = []
+    mlist = []
+    klist = []
     
     if command=="d":
         message = input("Message: ")
