@@ -20,8 +20,7 @@ while command!="q":
     if command=="d":
         message = input("Message: ")
         key = input("Key: ")
-        for x in message
-            
+     
         print("d")
     
     if command=="e":
