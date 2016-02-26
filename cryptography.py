@@ -23,7 +23,7 @@ while command!="q":
      
         print("d")
     
-    if command=="e":
+    elif command=="e":
         message = input("Message: ")
         key = input("Key: ")
         print("e")
