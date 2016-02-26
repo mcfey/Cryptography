@@ -31,4 +31,4 @@ while command!="q":
     else: 
         print("Did not understand command, try again.")
     
-    
+    command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
