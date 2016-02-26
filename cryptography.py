@@ -24,6 +24,7 @@ if command==d:
 if command==d:
     print("d")
 
-else print("Did not understand command, try again.")
+else: 
+    print("Did not understand command, try again.")
     
     
