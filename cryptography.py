@@ -13,17 +13,17 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-while command!=="q":
+while command!="q":
     
-    if command==q:
+    if command=="q":
         print("Goodbye!")
 
-    if command==d:
+    if command=="d":
         message = input("Message: ")
         key = input("Key: ")
         print("d")
     
-    if command==d:
+    if command=="d":
         message = input("Message: ")
         key = input("Key: ")
         print("d")
