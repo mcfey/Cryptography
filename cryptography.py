@@ -38,4 +38,4 @@ while command!="q":
     command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 if command=="q":
-        print("Goodbye!")
+    print("Goodbye!")
