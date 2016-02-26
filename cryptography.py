@@ -27,7 +27,7 @@ while command!="q":
         message = input("Message: ")
         key = input("Key: ")
         print("e")
-
+    
     else: 
         print("Did not understand command, try again.")
     
