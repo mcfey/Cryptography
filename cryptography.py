@@ -49,7 +49,7 @@ while command!="q":
                 print(associations[x], end="")
             else:
                 print(associations[x-len(associations)-1], end="")
-     
+        print( )
     
     
     
