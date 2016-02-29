@@ -29,8 +29,7 @@ while command!="q":
         
         print(mlist)
         print(klist)
-        print(zip(mlist, klist))
-        
+        print(list(zip(mlist, klist)))
     
     elif command=="d":
         message = input("Message: ")
