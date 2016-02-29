@@ -18,7 +18,6 @@ while command!="q":
     klist = []
     addlist = []
 
-
     
     if command=="e":
         message = input("Message: ")
