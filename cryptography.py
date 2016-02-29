@@ -29,7 +29,7 @@ while command!="q":
         
         print(mlist)
         print(klist)
-        newlist= zip(mlist, klist)
+        newlist = zip(mlist, klist)
         print(newlist)
     
     elif command=="d":
