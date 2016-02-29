@@ -29,7 +29,11 @@ while command!="q":
         
         print(mlist)
         print(klist)
-        print(list(zip(mlist, klist)))
+        
+        n = len(mlist)
+        while n>0:
+            klist.append(k(n-(n-1)))
+            n=n-1
     
     elif command=="d":
         message = input("Message: ")
