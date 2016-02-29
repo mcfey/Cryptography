@@ -48,12 +48,10 @@ while command!="q":
         
         for x in endlist:
             if x<= len(associations):
-                endlist.append(associations[x])
+                print(associations[x], end="")
             else:
-                endlist.append(associations[x-len(associations)-1])
-        
-        for x in endlist:
-            print(endlist[x], end="")
+                print(associations[x-len(associations)-1], end="")
+     
     
     
     
