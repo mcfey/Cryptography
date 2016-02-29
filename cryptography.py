@@ -28,9 +28,6 @@ while command!="q":
         for x in key:
             klist.append(associations.find(x))
         
-        print(mlist)
-        print(klist)
-        
         n = len(mlist)
         while n>0:
             y = klist[len(mlist)-n]
@@ -38,11 +35,8 @@ while command!="q":
             n=n-1
         
         ziplist = list(zip(klist, mlist))
-        
         for x in ziplist:
             addlist.append(x[0] + x[1])
-        
-        print(addlist)
         
         for x in addlist:
             if x<= len(associations):
