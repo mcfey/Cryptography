@@ -18,6 +18,7 @@ while command!="q":
     klist = []
     addlist = []
 
+
     
     if command=="e":
         message = input("Message: ")
@@ -52,6 +53,7 @@ while command!="q":
         key = input("Key: ")
         print("e")
         
+    
     
     else: 
         print("Did not understand command, try again.")
