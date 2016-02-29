@@ -52,27 +52,6 @@ while command!="q":
         message = input("Message: ")
         key = input("Key: ")
         
-        for x in message:
-            mlist.append(associations.find(x))
-        for x in key:
-            klist.append(associations.find(x))
-        
-        n = len(mlist)
-        while n>0:
-            y = klist[len(mlist)-n]
-            klist.append(y)
-            n=n-1
-        
-        ziplist = list(zip(klist, mlist))
-        for x in ziplist:
-            addlist.append(x[0] + x[1])
-        
-        for x in addlist:
-            if x<= len(associations):
-                print(associations[x], end="")
-            else:
-                print(associations[x-len(associations)-1], end="")
-        print( )
         
     
     
