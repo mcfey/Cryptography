@@ -16,7 +16,7 @@ command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 while command!="q":
     mlist = []
     klist = []
-    addlist = []
+    endlist = []
     
     if command=="e":
         message = input("Message: ")
@@ -37,6 +37,13 @@ while command!="q":
             n=n-1
         
         print(klist)
+        
+        ziplist = list(zip(klist, mlist))
+        
+        for x in ziplist:
+            endlist.append(x[0] + x[1])
+        
+        print(endlist)
     
     elif command=="d":
         message = input("Message: ")
