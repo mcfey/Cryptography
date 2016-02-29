@@ -16,6 +16,7 @@ command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 while command!="q":
     mlist = []
     klist = []
+    addlist = []
     
     if command=="e":
         message = input("Message: ")
@@ -25,12 +26,16 @@ while command!="q":
             mlist.append(associations.find(x))
         for x in key:
             klist.append(associations.find(x))
+        
         print(mlist)
+        print(klist)
+        newlist= zip(mlist, klist)
     
     elif command=="d":
         message = input("Message: ")
         key = input("Key: ")
         print("e")
+        
     
     else: 
         print("Did not understand command, try again.")
