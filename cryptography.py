@@ -34,6 +34,7 @@ while command!="q":
         while n>0:
             klist.append(k(n-(n-1)))
             n=n-1
+        print(klist)
     
     elif command=="d":
         message = input("Message: ")
