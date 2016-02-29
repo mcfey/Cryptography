@@ -32,7 +32,7 @@ while command!="q":
         
         n = len(mlist)
         while n>0:
-            klist.append(klist(n-(n-1)))
+            klist.append(klist(n))
             n=n-1
         print(klist)
     
