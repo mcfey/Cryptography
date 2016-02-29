@@ -31,11 +31,10 @@ while command!="q":
         print(klist)
         
         n = len(mlist)
-        n2 = len(mlist)
         while n>0:
-            y = klist[n-n2]
+            y = klist[len(mlist)-n]
             klist.append(y)
-            n2=n2-1
+            n=n-1
         
         print(klist)
     
