@@ -17,9 +17,7 @@ while command!="q":
     mlist = []
     klist = []
     addlist = []
-    endlist = []
-    
-    
+
     
     if command=="e":
         message = input("Message: ")
@@ -46,7 +44,7 @@ while command!="q":
         
         print(addlist)
         
-        for x in endlist:
+        for x in addlist:
             if x<= len(associations):
                 print(associations[x], end="")
             else:
