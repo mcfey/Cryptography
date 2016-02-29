@@ -31,10 +31,12 @@ while command!="q":
         print(klist)
         
         n = len(mlist)
+        n2 = len(mlist)
         while n>0:
-            y = klist[n-(n-1)]
+            y = klist[n-k]
             klist.append(y)
-            n=n-1
+            n2=n2-1
+        
         print(klist)
     
     elif command=="d":
