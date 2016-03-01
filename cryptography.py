@@ -14,14 +14,13 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 while command!="q":
-    mlist = []
-    klist = []
-    addlist = []
-
     
     if command=="e":
         message = input("Message: ")
         key = input("Key: ")
+        mlist = []
+        klist = []
+        addlist = []
         
         for x in message:
             mlist.append(associations.find(x))
@@ -50,8 +49,31 @@ while command!="q":
     elif command=="d":
         message = input("Message: ")
         key = input("Key: ")
+        dmlist = []
+        klist = []
+        addlist = []
         
+        for x in message:
+            dmlist.append(associations.find(x))
+        for x in key:
+            klist.append(associations.find(x))
         
+        n = len(dmlist)
+        while n>0:
+            y = klist[len(dmlist)-n]
+            klist.append(y)
+            n=n-1
+        
+        ziplist = list(zip(klist, dmlist))
+        for x in ziplist:
+            addlist.append(x[1]-x[0])
+        
+        for x in addlist:
+            if x<= len(associations):
+                print(associations[x], end="")
+            else:
+                print(associations[x-len(associations)-1], end="")
+        print( )
     
     
     else: 
