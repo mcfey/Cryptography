@@ -38,10 +38,10 @@ while command!="q":
             addlist.append(x[0] + x[1])
         
         for x in addlist:
-            if x<= len(associations):
+            if x< len(associations):
                 print(associations[x], end="")
             else:
-                print(associations[x-len(associations)-1], end="")
+                print(associations[x-len(associations)], end="")
         print( )
     
     
@@ -69,10 +69,10 @@ while command!="q":
             addlist.append(x[1]-x[0])
         
         for x in addlist:
-            if x<= len(associations):
+            if x< len(associations):
                 print(associations[x], end="")
             else:
-                print(associations[x-len(associations)-1], end="")
+                print(associations[x-len(associations)], end="")
         print( )
     
     
